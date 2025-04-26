@@ -6,6 +6,7 @@ export interface EligibleUniversity {
   course: string;
   cutoff: number;
   margin: string;
+  isEligible: boolean;
 }
 
 interface ResultsTableProps {
@@ -14,14 +15,17 @@ interface ResultsTableProps {
 }
 
 export const ResultsTable = ({ universities, zScore }: ResultsTableProps) => {
+  // Count eligible universities
+  const eligibleCount = universities.filter(uni => uni.isEligible).length;
+
   return (
     <section className="animate-fadeIn">
       <Card>
         <CardHeader className="pb-3">
-          <h2 className="text-xl font-medium">Your Eligible Universities</h2>
+          <h2 className="text-xl font-medium">University Eligibility Results</h2>
           <p className="text-sm text-gray-500 mt-1">
             Based on your Z-Score of <span className="font-medium">{zScore.toFixed(4)}</span>, 
-            you are eligible for {universities.length} university programs.
+            you are eligible for <span className="font-medium text-[#34a853]">{eligibleCount}</span> out of {universities.length} university programs.
           </p>
         </CardHeader>
         
@@ -38,17 +42,23 @@ export const ResultsTable = ({ universities, zScore }: ResultsTableProps) => {
             <TableBody>
               {universities.map((uni, index) => {
                 const marginValue = parseFloat(uni.margin);
-                const marginClass = marginValue > 0.1 ? "text-[#34a853]" : "text-orange-500";
+                const isEligible = uni.isEligible;
                 
                 return (
-                  <TableRow key={index}>
+                  <TableRow key={index} className={isEligible ? "" : "bg-gray-50"}>
                     <TableCell className="font-medium">{uni.university}</TableCell>
                     <TableCell>{uni.course}</TableCell>
                     <TableCell>{uni.cutoff.toFixed(4)}</TableCell>
                     <TableCell>
-                      <div className="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-green-100 text-[#34a853]">
-                        Eligible (+{uni.margin})
-                      </div>
+                      {isEligible ? (
+                        <div className="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-green-100 text-[#34a853]">
+                          Eligible (+{uni.margin})
+                        </div>
+                      ) : (
+                        <div className="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-red-100 text-red-600">
+                          Not Eligible ({uni.margin})
+                        </div>
+                      )}
                     </TableCell>
                   </TableRow>
                 );

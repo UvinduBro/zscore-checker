@@ -2,7 +2,6 @@ import { useState } from "react";
 import { EligibilityForm } from "@/components/EligibilityForm";
 import { ResultsTable, EligibleUniversity } from "@/components/ResultsTable";
 import { LoadingSpinner } from "@/components/LoadingSpinner";
-import { NoResultsMessage } from "@/components/NoResultsMessage";
 import { universityData } from "@/lib/universityData";
 
 export type FormData = {
@@ -17,37 +16,30 @@ const Home = () => {
   const [eligibleUniversities, setEligibleUniversities] = useState<EligibleUniversity[]>([]);
   const [isLoading, setIsLoading] = useState<boolean>(false);
   const [showResults, setShowResults] = useState<boolean>(false);
-  const [showNoResults, setShowNoResults] = useState<boolean>(false);
-
   const processEligibility = (data: FormData) => {
     setIsLoading(true);
     setShowResults(false);
-    setShowNoResults(false);
     setFormData(data);
 
     // Simulate loading delay (1 second)
     setTimeout(() => {
-      // Get the eligible universities based on district, stream, and Z-Score
+      // Get all universities based on district and stream
       const districtData = universityData[data.district] || {};
       const streamData = districtData[data.stream] || [];
       
-      // Filter eligible universities
-      const eligible = streamData
-        .filter(uni => data.zScore >= uni.cutoff)
+      // Show all universities with their margins (positive or negative)
+      const universities = streamData
         .map(uni => ({
           ...uni,
-          margin: (data.zScore - uni.cutoff).toFixed(4)
+          margin: (data.zScore - uni.cutoff).toFixed(4),
+          isEligible: data.zScore >= uni.cutoff
         }))
-        .sort((a, b) => b.cutoff - a.cutoff);
+        .sort((a, b) => Number(b.margin) - Number(a.margin)); // Sort by margin (highest first)
       
-      setEligibleUniversities(eligible);
+      setEligibleUniversities(universities);
       setIsLoading(false);
 
-      if (eligible.length === 0) {
-        setShowNoResults(true);
-      } else {
-        setShowResults(true);
-      }
+      setShowResults(universities.length > 0);
     }, 1000);
   };
 
@@ -55,7 +47,6 @@ const Home = () => {
     setFormData(null);
     setEligibleUniversities([]);
     setShowResults(false);
-    setShowNoResults(false);
   };
 
   return (
@@ -69,8 +60,6 @@ const Home = () => {
         <EligibilityForm onSubmit={processEligibility} onReset={handleReset} />
 
         {isLoading && <LoadingSpinner />}
-        
-        {showNoResults && <NoResultsMessage />}
 
         {showResults && formData && (
           <ResultsTable 
@@ -81,7 +70,7 @@ const Home = () => {
 
         <footer className="mt-12 text-center text-sm text-gray-500">
           <p>Data sourced from University Grants Commission of Sri Lanka</p>
-          <p className="mt-1">© 2025 University Eligibility Checker</p>
+          <p className="mt-1">© 2023 University Eligibility Checker</p>
           <p className="mt-2">Developed by <a href="https://www.facebook.com/UvinduOnline/" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">Uvindu Rajapakshe</a></p>
         </footer>
       </main>
