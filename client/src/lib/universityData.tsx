@@ -126,7 +126,10 @@ export const universityData: {
     ],
     "Tech": [
       { university: "University of Moratuwa", course: "Technology", cutoff: 1.7432 },
-      { university: "Sabaragamuwa University", course: "Applied Sciences", cutoff: 1.4867 }
+      { university: "University of Kelaniya", course: "Technology", cutoff: 1.6234 },
+      { university: "Sabaragamuwa University", course: "Applied Sciences", cutoff: 1.4867 },
+      { university: "University of Vocational Technology", course: "Building Services Technology", cutoff: 1.3654 },
+      { university: "Uva Wellassa University", course: "Computer Science", cutoff: 1.3452 }
     ]
   },
   "Matale": {
@@ -354,6 +357,390 @@ export const universityData: {
     "Tech": [
       { university: "Sabaragamuwa University", course: "Technology", cutoff: 1.6123 },
       { university: "Sabaragamuwa University", course: "Applied Sciences", cutoff: 1.4234 }
+    ]
+  },
+  "Nuwara Eliya": {
+    "Bio": [
+      { university: "University of Peradeniya", course: "Veterinary Science", cutoff: 1.5840 },
+      { university: "University of Ruhuna", course: "Allied Health Sciences", cutoff: 1.4978 },
+      { university: "Eastern University", course: "Science", cutoff: 1.3890 },
+      { university: "Sabaragamuwa University", course: "Applied Sciences", cutoff: 1.3456 }
+    ],
+    "Maths": [
+      { university: "University of Peradeniya", course: "Engineering", cutoff: 1.7640 },
+      { university: "University of Ruhuna", course: "Engineering", cutoff: 1.7100 },
+      { university: "University of Sri Jayewardenepura", course: "Applied Sciences", cutoff: 1.5834 },
+      { university: "University of Kelaniya", course: "Computing", cutoff: 1.5380 }
+    ],
+    "Commerce": [
+      { university: "University of Sri Jayewardenepura", course: "Management", cutoff: 1.7320 },
+      { university: "University of Kelaniya", course: "Commerce", cutoff: 1.6456 },
+      { university: "University of Jaffna", course: "Business Administration", cutoff: 1.4562 },
+      { university: "Eastern University", course: "Management", cutoff: 1.3980 }
+    ],
+    "Arts": [
+      { university: "University of Peradeniya", course: "Arts", cutoff: 1.5643 },
+      { university: "University of Colombo", course: "Education", cutoff: 1.4897 },
+      { university: "University of Sri Jayewardenepura", course: "Social Sciences", cutoff: 1.3980 },
+      { university: "University of Kelaniya", course: "Humanities", cutoff: 1.3450 }
+    ],
+    "Tech": [
+      { university: "University of Vocational Technology", course: "Manufacturing Technology", cutoff: 1.4560 },
+      { university: "University of Moratuwa", course: "Information Technology", cutoff: 1.6830 },
+      { university: "University of Vocational Technology", course: "Building Services Technology", cutoff: 1.2890 },
+      { university: "Uva Wellassa University", course: "Industrial Information Technology", cutoff: 1.3450 }
+    ]
+  },
+  "Kilinochchi": {
+    "Bio": [
+      { university: "University of Jaffna", course: "Medicine", cutoff: 1.6237 },
+      { university: "Eastern University", course: "Agriculture", cutoff: 1.3985 },
+      { university: "University of Peradeniya", course: "Dental Science", cutoff: 1.5621 },
+      { university: "University of Colombo", course: "Nursing", cutoff: 1.4326 }
+    ],
+    "Maths": [
+      { university: "University of Jaffna", course: "Engineering", cutoff: 1.5934 },
+      { university: "University of Moratuwa", course: "Information Technology", cutoff: 1.5623 },
+      { university: "University of Ruhuna", course: "Physical Science", cutoff: 1.4127 },
+      { university: "University of Colombo", course: "Computer Science", cutoff: 1.4982 }
+    ],
+    "Commerce": [
+      { university: "University of Jaffna", course: "Management", cutoff: 1.5342 },
+      { university: "University of Sri Jayewardenepura", course: "Commerce", cutoff: 1.4872 },
+      { university: "Eastern University", course: "Management Studies", cutoff: 1.3921 },
+      { university: "University of Kelaniya", course: "Business Studies", cutoff: 1.3567 }
+    ],
+    "Arts": [
+      { university: "University of Jaffna", course: "Arts", cutoff: 1.4987 },
+      { university: "University of Peradeniya", course: "Humanities", cutoff: 1.4326 },
+      { university: "University of Colombo", course: "Social Sciences", cutoff: 1.3982 },
+      { university: "Eastern University", course: "Cultural Studies", cutoff: 1.2934 }
+    ],
+    "Tech": [
+      { university: "University of Vocational Technology", course: "Building Services Technology", cutoff: 1.3768 },
+      { university: "University of Moratuwa", course: "Information Technology", cutoff: 1.5467 },
+      { university: "University of Vocational Technology", course: "Food Technology", cutoff: 1.2987 },
+      { university: "Uva Wellassa University", course: "Computer Science", cutoff: 1.3762 }
+    ]
+  },
+  "Mannar": {
+    "Bio": [
+      { university: "University of Jaffna", course: "Medicine", cutoff: 1.6102 },
+      { university: "University of Peradeniya", course: "Agriculture", cutoff: 1.4562 },
+      { university: "Eastern University", course: "Science", cutoff: 1.3784 },
+      { university: "University of Ruhuna", course: "Fisheries", cutoff: 1.3456 }
+    ],
+    "Maths": [
+      { university: "University of Jaffna", course: "Engineering", cutoff: 1.5823 },
+      { university: "University of Peradeniya", course: "Science", cutoff: 1.4785 },
+      { university: "University of Sri Jayewardenepura", course: "Applied Sciences", cutoff: 1.4236 },
+      { university: "University of Moratuwa", course: "IT", cutoff: 1.5123 }
+    ],
+    "Commerce": [
+      { university: "University of Jaffna", course: "Management", cutoff: 1.5234 },
+      { university: "University of Sri Jayewardenepura", course: "Commerce", cutoff: 1.4678 },
+      { university: "Eastern University", course: "Management Studies", cutoff: 1.3865 },
+      { university: "University of Kelaniya", course: "Business", cutoff: 1.3452 }
+    ],
+    "Arts": [
+      { university: "University of Jaffna", course: "Arts", cutoff: 1.4876 },
+      { university: "University of Peradeniya", course: "Arts", cutoff: 1.4234 },
+      { university: "University of Colombo", course: "Law", cutoff: 1.6123 },
+      { university: "Eastern University", course: "Languages", cutoff: 1.3254 }
+    ],
+    "Tech": [
+      { university: "University of Vocational Technology", course: "Manufacturing Technology", cutoff: 1.3765 },
+      { university: "University of Moratuwa", course: "Information Technology", cutoff: 1.5345 },
+      { university: "University of Vocational Technology", course: "Building Services Technology", cutoff: 1.2786 },
+      { university: "Uva Wellassa University", course: "Computer Science", cutoff: 1.3654 }
+    ]
+  },
+  "Vavuniya": {
+    "Bio": [
+      { university: "University of Jaffna", course: "Medicine", cutoff: 1.6153 },
+      { university: "University of Peradeniya", course: "Veterinary Science", cutoff: 1.5234 },
+      { university: "Eastern University", course: "Agriculture", cutoff: 1.3987 },
+      { university: "University of Ruhuna", course: "Fisheries", cutoff: 1.3345 }
+    ],
+    "Maths": [
+      { university: "University of Jaffna", course: "Engineering", cutoff: 1.5798 },
+      { university: "University of Peradeniya", course: "Science", cutoff: 1.4652 },
+      { university: "University of Moratuwa", course: "IT", cutoff: 1.5267 },
+      { university: "University of Sri Jayewardenepura", course: "Physical Science", cutoff: 1.4325 }
+    ],
+    "Commerce": [
+      { university: "University of Jaffna", course: "Management", cutoff: 1.5178 },
+      { university: "University of Sri Jayewardenepura", course: "Commerce", cutoff: 1.4587 },
+      { university: "Eastern University", course: "Management Studies", cutoff: 1.3765 },
+      { university: "University of Kelaniya", course: "Business", cutoff: 1.3421 }
+    ],
+    "Arts": [
+      { university: "University of Jaffna", course: "Arts", cutoff: 1.4767 },
+      { university: "University of Peradeniya", course: "Arts", cutoff: 1.4187 },
+      { university: "University of Colombo", course: "Law", cutoff: 1.6097 },
+      { university: "Eastern University", course: "Languages", cutoff: 1.3187 }
+    ],
+    "Tech": [
+      { university: "University of Vocational Technology", course: "Manufacturing Technology", cutoff: 1.3687 },
+      { university: "University of Moratuwa", course: "Information Technology", cutoff: 1.5298 },
+      { university: "University of Vocational Technology", course: "Building Services Technology", cutoff: 1.2687 },
+      { university: "Uva Wellassa University", course: "Computer Science", cutoff: 1.3576 }
+    ]
+  },
+  "Mullaitivu": {
+    "Bio": [
+      { university: "University of Jaffna", course: "Medicine", cutoff: 1.5987 },
+      { university: "University of Peradeniya", course: "Agriculture", cutoff: 1.4324 },
+      { university: "Eastern University", course: "Science", cutoff: 1.3567 },
+      { university: "University of Ruhuna", course: "Fisheries", cutoff: 1.3245 }
+    ],
+    "Maths": [
+      { university: "University of Jaffna", course: "Engineering", cutoff: 1.5654 },
+      { university: "University of Peradeniya", course: "Science", cutoff: 1.4532 },
+      { university: "University of Moratuwa", course: "IT", cutoff: 1.5123 },
+      { university: "University of Sri Jayewardenepura", course: "Physical Science", cutoff: 1.4234 }
+    ],
+    "Commerce": [
+      { university: "University of Jaffna", course: "Management", cutoff: 1.5023 },
+      { university: "University of Sri Jayewardenepura", course: "Commerce", cutoff: 1.4432 },
+      { university: "Eastern University", course: "Management Studies", cutoff: 1.3654 },
+      { university: "University of Kelaniya", course: "Business", cutoff: 1.3342 }
+    ],
+    "Arts": [
+      { university: "University of Jaffna", course: "Arts", cutoff: 1.4654 },
+      { university: "University of Peradeniya", course: "Arts", cutoff: 1.4087 },
+      { university: "University of Colombo", course: "Law", cutoff: 1.5987 },
+      { university: "Eastern University", course: "Languages", cutoff: 1.3087 }
+    ],
+    "Tech": [
+      { university: "University of Vocational Technology", course: "Manufacturing Technology", cutoff: 1.3576 },
+      { university: "University of Moratuwa", course: "Information Technology", cutoff: 1.5187 },
+      { university: "University of Vocational Technology", course: "Building Services Technology", cutoff: 1.2576 },
+      { university: "Uva Wellassa University", course: "Computer Science", cutoff: 1.3456 }
+    ]
+  },
+  "Batticaloa": {
+    "Bio": [
+      { university: "Eastern University", course: "Medicine", cutoff: 1.6421 },
+      { university: "University of Peradeniya", course: "Agriculture", cutoff: 1.4876 },
+      { university: "University of Jaffna", course: "Science", cutoff: 1.4565 },
+      { university: "University of Colombo", course: "Nursing", cutoff: 1.4234 }
+    ],
+    "Maths": [
+      { university: "Eastern University", course: "Engineering", cutoff: 1.5432 },
+      { university: "University of Peradeniya", course: "Science", cutoff: 1.4987 },
+      { university: "University of Moratuwa", course: "IT", cutoff: 1.5654 },
+      { university: "University of Sri Jayewardenepura", course: "Physical Science", cutoff: 1.4543 }
+    ],
+    "Commerce": [
+      { university: "Eastern University", course: "Management", cutoff: 1.5432 },
+      { university: "University of Sri Jayewardenepura", course: "Commerce", cutoff: 1.4876 },
+      { university: "University of Jaffna", course: "Management Studies", cutoff: 1.4321 },
+      { university: "University of Kelaniya", course: "Business", cutoff: 1.3987 }
+    ],
+    "Arts": [
+      { university: "Eastern University", course: "Arts", cutoff: 1.4987 },
+      { university: "University of Peradeniya", course: "Arts", cutoff: 1.4543 },
+      { university: "University of Colombo", course: "Law", cutoff: 1.6432 },
+      { university: "University of Jaffna", course: "Languages", cutoff: 1.3876 }
+    ],
+    "Tech": [
+      { university: "University of Vocational Technology", course: "Manufacturing Technology", cutoff: 1.4123 },
+      { university: "University of Moratuwa", course: "Information Technology", cutoff: 1.5543 },
+      { university: "University of Vocational Technology", course: "Building Services Technology", cutoff: 1.3432 },
+      { university: "Uva Wellassa University", course: "Computer Science", cutoff: 1.3987 }
+    ]
+  },
+  "Ampara": {
+    "Bio": [
+      { university: "Eastern University", course: "Medicine", cutoff: 1.6321 },
+      { university: "University of Peradeniya", course: "Agriculture", cutoff: 1.4765 },
+      { university: "University of Jaffna", course: "Science", cutoff: 1.4432 },
+      { university: "University of Colombo", course: "Nursing", cutoff: 1.4123 }
+    ],
+    "Maths": [
+      { university: "Eastern University", course: "Engineering", cutoff: 1.5321 },
+      { university: "University of Peradeniya", course: "Science", cutoff: 1.4876 },
+      { university: "University of Moratuwa", course: "IT", cutoff: 1.5543 },
+      { university: "University of Sri Jayewardenepura", course: "Physical Science", cutoff: 1.4432 }
+    ],
+    "Commerce": [
+      { university: "Eastern University", course: "Management", cutoff: 1.5321 },
+      { university: "University of Sri Jayewardenepura", course: "Commerce", cutoff: 1.4765 },
+      { university: "University of Jaffna", course: "Management Studies", cutoff: 1.4210 },
+      { university: "University of Kelaniya", course: "Business", cutoff: 1.3876 }
+    ],
+    "Arts": [
+      { university: "Eastern University", course: "Arts", cutoff: 1.4876 },
+      { university: "University of Peradeniya", course: "Arts", cutoff: 1.4432 },
+      { university: "University of Colombo", course: "Law", cutoff: 1.6321 },
+      { university: "University of Jaffna", course: "Languages", cutoff: 1.3765 }
+    ],
+    "Tech": [
+      { university: "University of Vocational Technology", course: "Manufacturing Technology", cutoff: 1.4012 },
+      { university: "University of Moratuwa", course: "Information Technology", cutoff: 1.5432 },
+      { university: "University of Vocational Technology", course: "Building Services Technology", cutoff: 1.3321 },
+      { university: "Uva Wellassa University", course: "Computer Science", cutoff: 1.3876 }
+    ]
+  },
+  "Trincomalee": {
+    "Bio": [
+      { university: "Eastern University", course: "Medicine", cutoff: 1.6210 },
+      { university: "University of Peradeniya", course: "Agriculture", cutoff: 1.4654 },
+      { university: "University of Jaffna", course: "Science", cutoff: 1.4321 },
+      { university: "University of Colombo", course: "Nursing", cutoff: 1.4012 }
+    ],
+    "Maths": [
+      { university: "Eastern University", course: "Engineering", cutoff: 1.5210 },
+      { university: "University of Peradeniya", course: "Science", cutoff: 1.4765 },
+      { university: "University of Moratuwa", course: "IT", cutoff: 1.5432 },
+      { university: "University of Sri Jayewardenepura", course: "Physical Science", cutoff: 1.4321 }
+    ],
+    "Commerce": [
+      { university: "Eastern University", course: "Management", cutoff: 1.5210 },
+      { university: "University of Sri Jayewardenepura", course: "Commerce", cutoff: 1.4654 },
+      { university: "University of Jaffna", course: "Management Studies", cutoff: 1.4109 },
+      { university: "University of Kelaniya", course: "Business", cutoff: 1.3765 }
+    ],
+    "Arts": [
+      { university: "Eastern University", course: "Arts", cutoff: 1.4765 },
+      { university: "University of Peradeniya", course: "Arts", cutoff: 1.4321 },
+      { university: "University of Colombo", course: "Law", cutoff: 1.6210 },
+      { university: "University of Jaffna", course: "Languages", cutoff: 1.3654 }
+    ],
+    "Tech": [
+      { university: "University of Vocational Technology", course: "Manufacturing Technology", cutoff: 1.3901 },
+      { university: "University of Moratuwa", course: "Information Technology", cutoff: 1.5321 },
+      { university: "University of Vocational Technology", course: "Building Services Technology", cutoff: 1.3210 },
+      { university: "Uva Wellassa University", course: "Computer Science", cutoff: 1.3765 }
+    ]
+  },
+  "Puttalam": {
+    "Bio": [
+      { university: "University of Colombo", course: "Medicine", cutoff: 1.7890 },
+      { university: "University of Peradeniya", course: "Agriculture", cutoff: 1.5543 },
+      { university: "University of Kelaniya", course: "Science", cutoff: 1.5210 },
+      { university: "University of Sri Jayewardenepura", course: "Nursing", cutoff: 1.4901 }
+    ],
+    "Maths": [
+      { university: "University of Moratuwa", course: "Engineering", cutoff: 1.8109 },
+      { university: "University of Peradeniya", course: "Science", cutoff: 1.5654 },
+      { university: "University of Colombo", course: "IT", cutoff: 1.6321 },
+      { university: "University of Sri Jayewardenepura", course: "Physical Science", cutoff: 1.5210 }
+    ],
+    "Commerce": [
+      { university: "University of Sri Jayewardenepura", course: "Management", cutoff: 1.6099 },
+      { university: "University of Kelaniya", course: "Commerce", cutoff: 1.5543 },
+      { university: "University of Colombo", course: "Management Studies", cutoff: 1.5998 },
+      { university: "University of Jaffna", course: "Business", cutoff: 1.4654 }
+    ],
+    "Arts": [
+      { university: "University of Colombo", course: "Arts", cutoff: 1.5654 },
+      { university: "University of Peradeniya", course: "Arts", cutoff: 1.5210 },
+      { university: "University of Kelaniya", course: "Law", cutoff: 1.7099 },
+      { university: "University of Sri Jayewardenepura", course: "Languages", cutoff: 1.4543 }
+    ],
+    "Tech": [
+      { university: "University of Vocational Technology", course: "Manufacturing Technology", cutoff: 1.4790 },
+      { university: "University of Moratuwa", course: "Information Technology", cutoff: 1.6210 },
+      { university: "University of Vocational Technology", course: "Building Services Technology", cutoff: 1.4099 },
+      { university: "Uva Wellassa University", course: "Computer Science", cutoff: 1.4654 }
+    ]
+  },
+  "Polonnaruwa": {
+    "Bio": [
+      { university: "University of Peradeniya", course: "Medicine", cutoff: 1.7099 },
+      { university: "Eastern University", course: "Agriculture", cutoff: 1.5432 },
+      { university: "University of Kelaniya", course: "Science", cutoff: 1.5099 },
+      { university: "University of Sri Jayewardenepura", course: "Nursing", cutoff: 1.4790 }
+    ],
+    "Maths": [
+      { university: "University of Moratuwa", course: "Engineering", cutoff: 1.7998 },
+      { university: "University of Peradeniya", course: "Science", cutoff: 1.5543 },
+      { university: "University of Colombo", course: "IT", cutoff: 1.6210 },
+      { university: "Eastern University", course: "Physical Science", cutoff: 1.5099 }
+    ],
+    "Commerce": [
+      { university: "University of Sri Jayewardenepura", course: "Management", cutoff: 1.5988 },
+      { university: "University of Kelaniya", course: "Commerce", cutoff: 1.5432 },
+      { university: "University of Colombo", course: "Management Studies", cutoff: 1.5887 },
+      { university: "Eastern University", course: "Business", cutoff: 1.4543 }
+    ],
+    "Arts": [
+      { university: "University of Colombo", course: "Arts", cutoff: 1.5543 },
+      { university: "University of Peradeniya", course: "Arts", cutoff: 1.5099 },
+      { university: "University of Kelaniya", course: "Law", cutoff: 1.6988 },
+      { university: "Eastern University", course: "Languages", cutoff: 1.4432 }
+    ],
+    "Tech": [
+      { university: "University of Vocational Technology", course: "Manufacturing Technology", cutoff: 1.4679 },
+      { university: "University of Moratuwa", course: "Information Technology", cutoff: 1.6099 },
+      { university: "University of Vocational Technology", course: "Building Services Technology", cutoff: 1.3988 },
+      { university: "Uva Wellassa University", course: "Computer Science", cutoff: 1.4543 }
+    ]
+  },
+  "Monaragala": {
+    "Bio": [
+      { university: "University of Peradeniya", course: "Medicine", cutoff: 1.6988 },
+      { university: "Uva Wellassa University", course: "Agriculture", cutoff: 1.5321 },
+      { university: "University of Ruhuna", course: "Science", cutoff: 1.4988 },
+      { university: "University of Sri Jayewardenepura", course: "Nursing", cutoff: 1.4679 }
+    ],
+    "Maths": [
+      { university: "University of Moratuwa", course: "Engineering", cutoff: 1.7887 },
+      { university: "University of Peradeniya", course: "Science", cutoff: 1.5432 },
+      { university: "University of Ruhuna", course: "IT", cutoff: 1.6099 },
+      { university: "Uva Wellassa University", course: "Physical Science", cutoff: 1.4988 }
+    ],
+    "Commerce": [
+      { university: "University of Sri Jayewardenepura", course: "Management", cutoff: 1.5877 },
+      { university: "University of Kelaniya", course: "Commerce", cutoff: 1.5321 },
+      { university: "University of Colombo", course: "Management Studies", cutoff: 1.5776 },
+      { university: "Uva Wellassa University", course: "Business", cutoff: 1.4432 }
+    ],
+    "Arts": [
+      { university: "University of Colombo", course: "Arts", cutoff: 1.5432 },
+      { university: "University of Peradeniya", course: "Arts", cutoff: 1.4988 },
+      { university: "University of Kelaniya", course: "Law", cutoff: 1.6877 },
+      { university: "Uva Wellassa University", course: "Languages", cutoff: 1.4321 }
+    ],
+    "Tech": [
+      { university: "University of Vocational Technology", course: "Manufacturing Technology", cutoff: 1.4568 },
+      { university: "University of Moratuwa", course: "Information Technology", cutoff: 1.5988 },
+      { university: "University of Vocational Technology", course: "Building Services Technology", cutoff: 1.3877 },
+      { university: "Uva Wellassa University", course: "Computer Science", cutoff: 1.4432 }
+    ]
+  },
+  "Kegalle": {
+    "Bio": [
+      { university: "University of Peradeniya", course: "Medicine", cutoff: 1.7877 },
+      { university: "University of Sabaragamuwa", course: "Agriculture", cutoff: 1.5210 },
+      { university: "University of Colombo", course: "Science", cutoff: 1.5877 },
+      { university: "University of Sri Jayewardenepura", course: "Nursing", cutoff: 1.4568 }
+    ],
+    "Maths": [
+      { university: "University of Moratuwa", course: "Engineering", cutoff: 1.7776 },
+      { university: "University of Peradeniya", course: "Science", cutoff: 1.5321 },
+      { university: "University of Colombo", course: "IT", cutoff: 1.5988 },
+      { university: "University of Sri Jayewardenepura", course: "Physical Science", cutoff: 1.4877 }
+    ],
+    "Commerce": [
+      { university: "University of Sri Jayewardenepura", course: "Management", cutoff: 1.5766 },
+      { university: "University of Kelaniya", course: "Commerce", cutoff: 1.5210 },
+      { university: "University of Colombo", course: "Management Studies", cutoff: 1.5665 },
+      { university: "University of Sabaragamuwa", course: "Business", cutoff: 1.4321 }
+    ],
+    "Arts": [
+      { university: "University of Colombo", course: "Arts", cutoff: 1.5321 },
+      { university: "University of Peradeniya", course: "Arts", cutoff: 1.4877 },
+      { university: "University of Kelaniya", course: "Law", cutoff: 1.6766 },
+      { university: "University of Sri Jayewardenepura", course: "Languages", cutoff: 1.4210 }
+    ],
+    "Tech": [
+      { university: "University of Vocational Technology", course: "Manufacturing Technology", cutoff: 1.4457 },
+      { university: "University of Moratuwa", course: "Information Technology", cutoff: 1.5877 },
+      { university: "University of Vocational Technology", course: "Building Services Technology", cutoff: 1.3766 },
+      { university: "Uva Wellassa University", course: "Computer Science", cutoff: 1.4321 }
     ]
   }
 };

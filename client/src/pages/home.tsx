@@ -81,7 +81,8 @@ const Home = () => {
 
         <footer className="mt-12 text-center text-sm text-gray-500">
           <p>Data sourced from University Grants Commission of Sri Lanka</p>
-          <p className="mt-1">© 2023 University Eligibility Checker</p>
+          <p className="mt-1">© 2025 University Eligibility Checker</p>
+          <p className="mt-2">Developed by <a href="https://www.facebook.com/UvinduOnline/" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">Uvindu Rajapakshe</a></p>
         </footer>
       </main>
     </div>
