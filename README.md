@@ -1,98 +1,63 @@
-# 🎓 Z-Score Checker for Sri Lankan University Admissions
+# Sri Lanka University Eligibility Checker
 
-![Z-Score Checker](https://zscore.webackzer.com/assets/og-image.png)
+A modern, responsive web application that helps Sri Lankan students check their university eligibility based on Z-scores, district, and stream selection.
 
-A lightweight and responsive web app that helps users check Sri Lankan University Z-Scores by district and stream. Built using Node.js (Express) for routing and PHP for data handling, this tool is ideal for students, parents, and educators looking to access university entrance results efficiently.
+![University Eligibility Checker](https://github.com/user-attachments/assets/666859d3-68b5-4a8a-ad76-37ba246ac5c2)
 
-🔗 **Live Demo:** [https://zscore.webackzer.com/](https://zscore.webackzer.com/)
+## 🎓 Features
 
----
+- **Z-Score Based Eligibility:** Enter your Z-score to see which universities and courses you qualify for
+- **District-Specific Data:** Accurate cutoff values based on your district
+- **Academic Stream Support:** Coverage for all streams (Arts, Bio, Maths, Commerce, Tech)
+- **Comprehensive Results:** Shows both eligible and non-eligible programs with calculated margins
+- **User-Friendly Interface:** Clean, intuitive, and mobile-responsive design
 
-## 🧩 Features
+## 🚀 Live Demo
 
-- 📊 View Z-Score cut-offs by **district** and **stream** (Science, Arts, Commerce, etc.)
-- ⚡ Fast and responsive UI
-- 🔍 Search and filter functionality for quick access
-- 🗃️ Clean design and organized layout for readability
-- 🌐 Mobile-friendly interface
+Check out the live application: [Sri Lanka University Eligibility Checker]([https://university-eligibility-checker.vercel.app](https://zscore.webackzer.com/))
 
----
+## 💻 Technology Stack
 
-## 🛠️ Tech Stack
+- **React:** Frontend library for building the user interface
+- **TypeScript:** Type-safe JavaScript for better code quality
+- **TailwindCSS:** Utility-first CSS framework for styling
+- **Shadcn UI:** Component library for accessible and customizable UI elements
+- **Vercel:** Hosting platform with analytics and speed insights
 
-- **Frontend:** HTML, CSS, JavaScript
-- **Backend:** Node.js (Express), PHP
-- **Deployment:** Hosted on [Webackzer](https://webackzer.com)
+## 📊 Data Source
 
----
+This application uses the official cutoff data from the University Grants Commission of Sri Lanka (UGC), ensuring accuracy and reliability for university admission eligibility checking.
 
-## 📁 Project Structure
+## 📱 Mobile Friendly
 
+The application is fully responsive and works seamlessly on desktop, tablet, and mobile devices.
+
+## 🔧 Installation & Setup
+
+To run this project locally:
+
+```bash
+# Clone the repository
+git clone https://github.com/yourusername/university-eligibility-checker.git
+
+# Navigate to the project directory
+cd university-eligibility-checker
+
+# Install dependencies
+npm install
+
+# Start the development server
+npm run dev
 ```
-zscore-checker/
-├── public/             # Static files (HTML, CSS, JS)
-├── php/                # PHP logic for dynamic data
-├── routes/             # Express route definitions
-├── data/               # JSON or raw data files (Z-Scores)
-├── app.js              # Main Node.js app
-├── index.php           # Entry point for PHP scripts
-└── README.md
-```
 
----
+## 🤝 Contributing
 
-## 🚀 Getting Started
+Contributions, issues, and feature requests are welcome! Feel free to check the [issues page](https://github.com/UvinduBro/zscore-checker/issues).
 
-### Prerequisites
+## 📄 License
 
-- Node.js and npm
-- PHP (>= 7.4)
+This project is [MIT](LICENSE) licensed.
 
-### Installation
+## 👨‍💻 Developer
 
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/UvinduBro/zscore-checker.git
-   cd zscore-checker
-   ```
-
-2. Install Node.js dependencies:
-   ```bash
-   npm install
-   ```
-
-3. Run the app:
-   ```bash
-   node app.js
-   ```
-
-4. Make sure PHP is set up to serve `index.php` files where needed (use XAMPP, WAMP, or a PHP server).
-
----
-
-## 📌 Usage
-
-1. Navigate to the homepage.
-2. Select the **district** and **stream**.
-3. View the Z-Score cut-off values listed for each university.
-4. Optionally, filter results for faster lookup.
-
----
-
-## 👨‍💻 Author
-
-**Uvindu Rajapakshe**  
-Founder – [Webackzer Pvt Ltd](https://webackzer.com)  
-🔗 [GitHub](https://github.com/UvinduBro)
-
----
-
-## 📜 License
-
-This project is open source and available under the [MIT License](LICENSE).
-
----
-
-## 🙌 Contribute
-
-Contributions are welcome! Please open issues or pull requests to help improve this tool for students across Sri Lanka.
+Developed by [Uvindu Rajapakshe](https://www.facebook.com/UvinduOnline/)
